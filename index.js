@@ -1,4 +1,5 @@
 var assert = require('assert'),
+    PORT = process.env.PORT || 3000,
     express = require('express'),
     engines = require('consolidate'),
 
@@ -12,7 +13,7 @@ var assert = require('assert'),
     .use(function(req, res) {
         res.sendStatus(404);
     }),
-    server = app.listen(3000, function() {
+    server = app.listen(PORT, function() {
         var port = server.address().port;
         console.log('Up an runnin');
     });

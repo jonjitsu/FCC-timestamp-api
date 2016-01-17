@@ -4,7 +4,8 @@
   "description": "FCC project to build a microservice that converts dates and unix timestamps.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+      "test": "npm test",
+      "start": "node index.js"
   },
   "keywords": [
     "freecodecamp",

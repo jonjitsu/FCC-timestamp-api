@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3000;
 var assert = require('assert'),
     express = require('express'),
     engines = require('consolidate'),
+    ts = require('./timestamps.js'),
 
     app = express()
      .engine('html', engines.nunjucks)
@@ -13,6 +14,9 @@ var assert = require('assert'),
      .get('/', function(req, res) {
          // res.send('It Works JW!');
          res.render('welcome');
+     })
+     .get('/:value', function(req, res) {
+         res.json(ts.response(ts.parseValue(req.params.value)));
      })
      .use(function(req, res) {
          res.sendStatus(404);

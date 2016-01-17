@@ -1,0 +1,21 @@
+{
+  "name": "timestamp-microservice",
+  "version": "0.1.0",
+  "description": "FCC project to build a microservice that converts dates and unix timestamps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "freecodecamp",
+    "microservice",
+    "api"
+  ],
+  "author": "Jonathan Willis",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "consolidate": "^0.13.1",
+    "express": "^4.13.3",
+    "nunjucks": "^2.3.0"
+  }
+}

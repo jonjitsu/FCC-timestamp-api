@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm test",
     "start": "node build/server.js",
-    "build": "mkdir -p build && babel src/server.js -o build/server.js && cp -R src/views build",
+    "build": "mkdir -p build && babel src/*.js -o build/server.js && cp -R src/views build",
     "dev": "babel-node src/server.js"
   },
   "keywords": [
